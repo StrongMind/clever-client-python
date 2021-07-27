@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.districts_response import DistrictsResponse  # noqa: E501
-from swagger_client.rest import ApiException
+import clever_client
+from clever_client.models.districts_response import DistrictsResponse  # noqa: E501
+from clever_client.rest import ApiException
 
 
 class TestDistrictsResponse(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestDistrictsResponse(unittest.TestCase):
     def testDistrictsResponse(self):
         """Test DistrictsResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.districts_response.DistrictsResponse()  # noqa: E501
+        # model = clever_client.models.districts_response.DistrictsResponse()  # noqa: E501
         pass
 
 

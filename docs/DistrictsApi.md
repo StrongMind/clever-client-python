@@ -1,4 +1,4 @@
-# swagger_client.DistrictsApi
+# clever_client.DistrictsApi
 
 All URIs are relative to *https://api.clever.com*
 
@@ -19,16 +19,16 @@ Returns a specific district
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import clever_client
+from clever_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth
-configuration = swagger_client.Configuration()
+configuration = clever_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.DistrictsApi(swagger_client.ApiClient(configuration))
+api_instance = clever_client.DistrictsApi(clever_client.ApiClient(configuration))
 id = 'id_example' # str | 
 
 try:
@@ -70,16 +70,16 @@ Returns a list of districts
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import clever_client
+from clever_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: oauth
-configuration = swagger_client.Configuration()
+configuration = clever_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.DistrictsApi(swagger_client.ApiClient(configuration))
+api_instance = clever_client.DistrictsApi(clever_client.ApiClient(configuration))
 count = 'count_example' # str |  (optional)
 
 try:

@@ -15,9 +15,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
-from swagger_client.models.course_object import CourseObject  # noqa: E501
-from swagger_client.rest import ApiException
+import clever_client
+from clever_client.models.course_object import CourseObject  # noqa: E501
+from clever_client.rest import ApiException
 
 
 class TestCourseObject(unittest.TestCase):
@@ -32,7 +32,7 @@ class TestCourseObject(unittest.TestCase):
     def testCourseObject(self):
         """Test CourseObject"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.course_object.CourseObject()  # noqa: E501
+        # model = clever_client.models.course_object.CourseObject()  # noqa: E501
         pass
 
 
