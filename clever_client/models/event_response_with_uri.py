@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-    Data API
+    Clever Data API
 
     Serves the Clever Data API  # noqa: E501
 

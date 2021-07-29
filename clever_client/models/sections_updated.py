@@ -34,26 +34,36 @@ class SectionsUpdated(object):
     """
     swagger_types = {
         'data': 'SectionObject',
+        'id': 'str',
+        'created': 'str',
         'previous_attributes': 'object'
     }
 
     attribute_map = {
         'data': 'data',
+        'id': 'id',
+        'created': 'created',
         'previous_attributes': 'previous_attributes'
     }
 
-    def __init__(self, data=None, previous_attributes=None, _configuration=None):  # noqa: E501
+    def __init__(self, data=None, id=None, created=None, previous_attributes=None, _configuration=None):  # noqa: E501
         """SectionsUpdated - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
         self._data = None
+        self._id = None
+        self._created = None
         self._previous_attributes = None
         self.discriminator = None
 
         if data is not None:
             self.data = data
+        if id is not None:
+            self.id = id
+        if created is not None:
+            self.created = created
         if previous_attributes is not None:
             self.previous_attributes = previous_attributes
 
@@ -77,6 +87,48 @@ class SectionsUpdated(object):
         """
 
         self._data = data
+
+    @property
+    def id(self):
+        """Gets the id of this SectionsUpdated.  # noqa: E501
+
+
+        :return: The id of this SectionsUpdated.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this SectionsUpdated.
+
+
+        :param id: The id of this SectionsUpdated.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def created(self):
+        """Gets the created of this SectionsUpdated.  # noqa: E501
+
+
+        :return: The created of this SectionsUpdated.  # noqa: E501
+        :rtype: str
+        """
+        return self._created
+
+    @created.setter
+    def created(self, created):
+        """Sets the created of this SectionsUpdated.
+
+
+        :param created: The created of this SectionsUpdated.  # noqa: E501
+        :type: str
+        """
+
+        self._created = created
 
     @property
     def previous_attributes(self):

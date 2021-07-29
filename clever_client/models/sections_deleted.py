@@ -33,24 +33,34 @@ class SectionsDeleted(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'SectionObject'
+        'data': 'SectionObject',
+        'id': 'str',
+        'created': 'str'
     }
 
     attribute_map = {
-        'data': 'data'
+        'data': 'data',
+        'id': 'id',
+        'created': 'created'
     }
 
-    def __init__(self, data=None, _configuration=None):  # noqa: E501
+    def __init__(self, data=None, id=None, created=None, _configuration=None):  # noqa: E501
         """SectionsDeleted - a model defined in Swagger"""  # noqa: E501
         if _configuration is None:
             _configuration = Configuration()
         self._configuration = _configuration
 
         self._data = None
+        self._id = None
+        self._created = None
         self.discriminator = None
 
         if data is not None:
             self.data = data
+        if id is not None:
+            self.id = id
+        if created is not None:
+            self.created = created
 
     @property
     def data(self):
@@ -72,6 +82,48 @@ class SectionsDeleted(object):
         """
 
         self._data = data
+
+    @property
+    def id(self):
+        """Gets the id of this SectionsDeleted.  # noqa: E501
+
+
+        :return: The id of this SectionsDeleted.  # noqa: E501
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this SectionsDeleted.
+
+
+        :param id: The id of this SectionsDeleted.  # noqa: E501
+        :type: str
+        """
+
+        self._id = id
+
+    @property
+    def created(self):
+        """Gets the created of this SectionsDeleted.  # noqa: E501
+
+
+        :return: The created of this SectionsDeleted.  # noqa: E501
+        :rtype: str
+        """
+        return self._created
+
+    @created.setter
+    def created(self, created):
+        """Sets the created of this SectionsDeleted.
+
+
+        :param created: The created of this SectionsDeleted.  # noqa: E501
+        :type: str
+        """
+
+        self._created = created
 
     def to_dict(self):
         """Returns the model properties as a dict"""

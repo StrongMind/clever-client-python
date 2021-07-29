@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  title: Data API
+  title: Clever Data API
   description: Serves the Clever Data API
   version: 3.0.0
 schemes:
@@ -2135,6 +2135,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/CourseObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
           previous_attributes:
             additionalProperties:
               type: object
@@ -2146,6 +2153,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/CourseObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   courses.deleted:
     allOf:
@@ -2154,6 +2168,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/CourseObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   districts.updated:
     allOf:
@@ -2162,6 +2183,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/DistrictObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
           previous_attributes:
             additionalProperties:
               type: object
@@ -2173,6 +2201,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/DistrictObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   districts.deleted:
     allOf:
@@ -2181,6 +2216,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/DistrictObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   resources.updated:
     allOf:
@@ -2189,6 +2231,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/ResourceObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
           previous_attributes:
             additionalProperties:
               type: object
@@ -2200,6 +2249,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/ResourceObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   resources.deleted:
     allOf:
@@ -2208,6 +2264,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/ResourceObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   schools.updated:
     allOf:
@@ -2216,6 +2279,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/SchoolObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
           previous_attributes:
             additionalProperties:
               type: object
@@ -2227,6 +2297,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/SchoolObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   schools.deleted:
     allOf:
@@ -2235,6 +2312,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/SchoolObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   sections.updated:
     allOf:
@@ -2243,6 +2327,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/SectionObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
           previous_attributes:
             additionalProperties:
               type: object
@@ -2254,6 +2345,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/SectionObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   sections.deleted:
     allOf:
@@ -2262,6 +2360,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/SectionObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   terms.updated:
     allOf:
@@ -2270,6 +2375,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/TermObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
           previous_attributes:
             additionalProperties:
               type: object
@@ -2281,6 +2393,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/TermObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   terms.deleted:
     allOf:
@@ -2289,6 +2408,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/TermObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   users.updated:
     allOf:
@@ -2297,6 +2423,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/UserObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
           previous_attributes:
             additionalProperties:
               type: object
@@ -2308,6 +2441,13 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/UserObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
 
   users.deleted:
     allOf:
@@ -2316,3 +2456,10 @@ definitions:
         properties:
           data:
             $ref: "#/definitions/UserObject"
+          id:
+            type: string
+            x-validation: true
+          created:
+            type: string
+            x-validation: true
+            format: datetime
