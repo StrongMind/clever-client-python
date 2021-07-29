@@ -2091,19 +2091,25 @@ definitions:
       data:
         type: array
         items:
-          $ref: "#/definitions/EventResponse"
+          $ref: "#/definitions/EventResponseWithUri"
       links:
         items:
           $ref: '#/definitions/Link'
         type: array
 
-  EventResponse:
+  EventResponseWithUri:
     type: object
     properties:
       data:
         $ref: "#/definitions/Event"
       uri:
         type: string
+
+  EventResponse:
+    type: object
+    properties:
+      data:
+        $ref: "#/definitions/Event"
 
   Event:
     type: object

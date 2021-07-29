@@ -146,6 +146,7 @@ Class | Method | HTTP request | Description
  - [DistrictsUpdated](docs/DistrictsUpdated.md)
  - [Event](docs/Event.md)
  - [EventResponse](docs/EventResponse.md)
+ - [EventResponseWithUri](docs/EventResponseWithUri.md)
  - [EventsResponse](docs/EventsResponse.md)
  - [InternalError](docs/InternalError.md)
  - [Link](docs/Link.md)
