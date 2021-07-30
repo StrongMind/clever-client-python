@@ -36,6 +36,7 @@ from clever_client.models.districts_response import DistrictsResponse
 from clever_client.models.districts_updated import DistrictsUpdated
 from clever_client.models.event import Event
 from clever_client.models.event_response import EventResponse
+from clever_client.models.event_response_with_uri import EventResponseWithUri
 from clever_client.models.events_response import EventsResponse
 from clever_client.models.internal_error import InternalError
 from clever_client.models.link import Link
