@@ -1,0 +1,9 @@
+name: Python Build
+
+on: 
+  workflow_dispatch:
+  
+jobs:
+  Dotnet-build:
+    uses: Strongmind/global-build/.github/workflows/python-build.yml@main
+    secrets: inherit
