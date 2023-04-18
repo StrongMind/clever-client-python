@@ -13,7 +13,7 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "clever_client"
+NAME = "strongmind-clever_client"
 VERSION = "1.0.1"
 # To install the library, run the following
 #
