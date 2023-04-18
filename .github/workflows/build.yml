@@ -5,5 +5,5 @@ on:
   
 jobs:
   Dotnet-build:
-    uses: Strongmind/global-build/.github/workflows/python-build.yml@main
+    uses: Strongmind/public-reusable-workflows/.github/workflows/python-build.yml@main
     secrets: inherit
