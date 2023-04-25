@@ -1,9 +1,11 @@
 name: Python Build
 
 on: 
-  workflow_dispatch:
-  
+  push:
+    branches:
+      - main
+
 jobs:
-  Dotnet-build:
-    uses: Strongmind/public-reusable-workflows/.github/workflows/python-build.yml@main
+  build-package:
+    uses: Strongmind/public-reusable-workflows/.github/workflows/python-package-build.yml@main
     secrets: inherit
